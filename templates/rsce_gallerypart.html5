@@ -1,0 +1,21 @@
+<div class="tedes-gallery landscape">
+    <?php if($this->type === 'Großes Bild links'): ?>
+        <div class="big-image half">
+            <a href="{{file::<?= $this->bigImage ?>}}" data-lightbox=""><img src="<?= $this->getImageObject($this->bigImage, '_example')->src ?>"></a>
+        </div>
+        <div class="small-images">
+            <?php foreach($this->smallImages as $image): ?>
+                <a href="{{file::<?= $image->file ?>}}" data-lightbox=""><img src="<?= $this->getImageObject($image->file, '_example')->src ?>"></a>
+            <?php endforeach; ?>
+        </div>
+    <?php elseif($this->type === 'Großes Bild rechts'): ?>
+        <div class="small-images">
+          <?php foreach($this->smallImages as $image): ?>
+              <a href="{{file::<?= $image->file ?>}}" data-lightbox=""><img src="<?= $this->getImageObject($image->file, '_example')->src ?>"></a>
+          <?php endforeach; ?>
+        </div>
+        <div class="big-image half">
+            <a href="{{file::<?= $this->bigImage ?>}}" data-lightbox=""><img src="<?= $this->getImageObject($this->bigImage, '_example')->src ?>"></a>
+        </div>
+    <?php endif; ?>
+</div>

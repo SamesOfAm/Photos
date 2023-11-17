@@ -1,0 +1,9 @@
+contao:
+  image:
+    sizes:
+      example:
+        resize_mode: crop
+        zoom: 100
+        lazy_loading: true
+        width: 256
+        height: 256
