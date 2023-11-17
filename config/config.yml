@@ -5,5 +5,8 @@ contao:
         resize_mode: crop
         zoom: 100
         lazy_loading: true
-        width: 256
-        height: 256
+        width: 1920
+        height: 1920
+        formats:
+          jpeg: [webp]
+          png: [webp]
