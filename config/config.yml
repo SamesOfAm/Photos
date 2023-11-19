@@ -10,3 +10,4 @@ contao:
         formats:
           jpeg: [webp]
           png: [webp]
+  url_suffix: ""

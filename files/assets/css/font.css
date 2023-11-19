@@ -1,6 +1,7 @@
 @font-face {
-    font-family: 'Champagne', sans-serif;
-    font-weight: 400;
-    src: url('../fonts/Champagne.ttf') format('truetype');
+    font-family: 'champagne__limousinesregular';
+    src: url('../fonts/champagne__limousines-webfont.woff2') format('woff2'),
+    url('../fonts/champagne__limousines-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
