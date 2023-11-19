@@ -1,13 +1,12 @@
 contao:
+  url_suffix: ""
   image:
     sizes:
       example:
-        resize_mode: crop
-        zoom: 100
         lazy_loading: true
-        width: 1920
-        height: 1920
+        width: 1000
+        height: 1000
         formats:
           jpeg: [webp]
           png: [webp]
-  url_suffix: ""
+          jpg: [webp]
