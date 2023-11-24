@@ -5,3 +5,26 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Geosans';
+    src: url('../fonts/geosanslight-webfont.woff') format('woff'),
+    url('../fonts/geosanslight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dettachment';
+    src: url('../fonts/Dettachment-Yzla2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homistorya';
+    src: url('../fonts/Homistorya.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,6 +1,6 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background: #fffaec;
+  font-family: 'Dettachment', sans-serif;
+  background: #fff9f2;
 }
 
 .tedes-gallery {
@@ -58,14 +58,23 @@ body {
   }
 }
 
-h1 {
-  font-family: "champagne__limousinesregular", sans-serif;
-  margin-bottom: 40px;
+h1,h3 {
+  font-family: "Homistorya", sans-serif;
+  margin-bottom: 0;
   text-align: center;
   font-weight: bold;
   font-size: 100px;
   text-transform: uppercase;
-  color: #ffa89e;
+  color: #fbc2ab;
+}
+
+h3 {
+  font-family: 'Geosans',sans-serif;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 45px;
 }
 
 .mobile_menu_trigger {
