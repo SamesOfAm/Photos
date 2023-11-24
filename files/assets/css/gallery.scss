@@ -1,6 +1,18 @@
 body {
-  font-family: 'Dettachment', sans-serif;
-  background: #fff9f2;
+  font-family: 'Geosans', sans-serif;
+}
+
+#main {
+  background-image: url('../layout/eucalyptus2.jpg');
+  background-repeat: no-repeat;
+  background-position: -54px -165px;
+  background-size: 16vw;
+  .inside {
+    background-image: url('../layout/eucalyptus1.jpg');
+    background-repeat: no-repeat;
+    background-position: 110% -99px;
+    background-size: 22vw;
+  }
 }
 
 .tedes-gallery {
@@ -58,24 +70,92 @@ body {
   }
 }
 
+#main .inside .mod_article > .ce_text {
+  width: 90%;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+#main .inside .mod_article > .back-button {
+  max-width: initial;
+  p {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: #eb7979;
+    }
+  }
+}
+
+#footer {
+  background-image: url('../layout/eucalyptus3.jpg');
+  background-repeat: no-repeat;
+  background-position: -15px -7px;
+  background-size: 16vw;
+  .inside {
+    background-image: url('../layout/eucalyptus1.jpg');
+    background-repeat: no-repeat;
+    background-position: 110% -7px;
+    background-size: 22vw;
+    .ce_text {
+      width: 90%;
+      max-width: 870px;
+      margin: 0 auto;
+      p {
+        font-size: 30px;
+        line-height: 1.5em;
+        color: #eb7979;
+        a {
+          color: #eb7979;
+          text-decoration: none;
+          position: relative;
+          &:after {
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #eb7979;
+            content: '';
+            transition: height 250ms;
+          }
+          &:hover:after {
+            height: 5px;
+          }
+        }
+        &:last-child {
+          margin: 0 0 80px;
+        }
+      }
+    }
+  }
+}
+
 h1,h3 {
-  font-family: "Homistorya", sans-serif;
+  font-family: "Santorini", sans-serif;
+  margin-top: 120px;
   margin-bottom: 0;
   text-align: center;
   font-weight: bold;
   font-size: 100px;
-  text-transform: uppercase;
   color: #fbc2ab;
-}
-
-h3 {
-  font-family: 'Geosans',sans-serif;
+  line-height: 2em;
 }
 
 h3 {
   margin-top: 0;
-  font-size: 45px;
+  font-size: 24px;
+  text-align: right;
+  font-family: 'Geosans',sans-serif;
 }
+
 
 .mobile_menu_trigger {
   width: 50px;
@@ -128,6 +208,11 @@ h3 {
     max-width: 1500px;
     margin: 80px auto;
     li {
+      &:nth-child(1) {
+        img {
+          object-position: top;
+        }
+      }
       &:nth-child(3) {
         grid-column-start: 3;
         grid-column-end: 5;
@@ -464,6 +549,39 @@ h3 {
     transition: background 250ms;
     &:hover {
       background-color: rgba(255,168,158,.1);
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #main {
+    background-size: 190px;
+    .inside {
+      background-size: 180px;
+      h1 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 15px;
+        text-align: center;
+      }
+      .ce_gallery.main > ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(54, 100px);
+        grid-gap: 5px;
+        li {
+          grid-column-start: initial;
+          grid-column-end: initial;
+          grid-row-start: initial;
+          grid-row-end: initial;
+          &:nth-child(132):after {
+            font-size: 22px;
+          }
+        }
+      }
+      .mod_article > .ce_text p {
+        font-size: 20px;
+      }
     }
   }
 }
